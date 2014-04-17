@@ -235,7 +235,7 @@
 }
 
 .small-buttons a.small-buy-now {
-    width: 31.40%;
+    width: 50.40%;
     min-height: 63px;
     line-height: 22px;
     background: #ff7f66;
@@ -323,7 +323,7 @@
 
     line-height: 37px;
     text-align: center;
-    font-size: 21px;
+    font-size: 17px;
 }
 
 #full-content .form .input-submit:hover {
