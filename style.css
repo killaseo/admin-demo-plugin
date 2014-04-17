@@ -1,0 +1,368 @@
+#wrap,#register-page {
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    float: left;
+    width:100%;
+}
+#register-page {
+    overflow: hidden;
+
+}
+#register-page #full-content{
+    padding-bottom:200px;
+
+}
+#wrap p,#register-page p{
+    margin:6px !important;
+
+}
+.wrapper {
+    width: 87.67%;
+}
+
+.full-wrap {
+    width: 69.51%;
+    margin: 0px auto;
+}
+
+/*
+** Header
+*/
+#header {
+    width: 100%;
+    height: 80px;
+    background: #34a7d6;
+}
+
+.logo-box {
+    width: 20.62%;
+    height: 80px;
+    font-size:18px;
+    line-height: 80px;
+    background: #34a7d6 url('images/logo-box-background.png') no-repeat center bottom;
+    text-align: center;
+    float: left;
+}
+
+.header-right {
+    width: 79.38%;
+    height: 80px;
+    background: #2f96c0 url('images/header-two.png') no-repeat right;
+    float: right;
+}
+
+.header-right .header-right-text {
+    margin: 15px 0px 0px 3.8%;
+    float: left;
+}
+
+.header-right .header-right-text p.header-title {
+    line-height: 24px;
+    font-size: 24px;
+}
+
+.header-right .header-right-text p.header-title span {
+    font-weight: 700;
+}
+
+.header-right .header-right-text p.header-description {
+    margin-top: 9px;
+    line-height: 12px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/*
+** Navigation
+*/
+#navigation {
+    width: 95%;
+    height: 40px;
+    background: #6ac1e5;
+    padding-left: 5%;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+#navigation ul li {
+    height: 40px;
+    margin-right: 3.43%;
+    line-height: 40px;
+    font-weight: 300;
+    color: #fefefe;
+    float: left;
+}
+
+#navigation ul li a {
+    color: #fefefe;
+    text-decoration: none;
+}
+
+#navigation ul li a:hover {
+    opacity: 0.8;
+}
+
+/*
+** Content
+*/
+#content {
+    width: 96.6%;
+    margin-top: 40px;
+    float: right;
+}
+
+#content .content-left {
+    width: 52.3%;
+    background: #fff;
+    padding: 48px 6.01% 40px 6.01%;
+    text-align: center;
+    float: left;
+}
+
+#content .content-left h3.title {
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #292e32;
+}
+
+#content .content-left p.subtitle {
+    margin-top: 24px;
+    line-height: 18px;
+    font-size: 18px;
+    color: #7d7f80;
+}
+
+#content .content-left p.entry {
+    margin-top: 29px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #7d7f80;
+}
+
+#content img {
+    width: 32.16%;
+    height: auto;
+    display: block;
+    float: right;
+}
+
+#content .buttons {
+    width: 100%;
+    margin-top: 40px;
+    float: left;
+}
+
+#content .buttons a.buy-now {
+    padding:10px;
+    height: 40px;
+    line-height: 40px;
+    background: #ff7f66;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+}
+
+#content .buttons a.buy-now span {
+    font-weight: 700;
+}
+
+#content .buttons a.buy-now:hover {
+    opacity: 0.9;
+}
+.content-left{
+    color:#666;
+
+}
+.toplevel_page_acf-options{
+ display:none;
+}
+#content .buttons a.support {
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+    height: 40px;
+    line-height: 40px;
+    background: #6ac1e5;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+}
+
+#content .buttons a.support:hover {
+    opacity: 0.9;
+}
+
+/* Small Content */
+#small-content {
+    width: 96.6%;
+    background: #fff url('images/small-content-background.png') no-repeat right;
+    min-height: 240px;
+    margin-top: 40px;
+    float: right;
+}
+
+#small-content .small-entry {
+    width: 62.45%;
+    margin: 50px 0px 0px 3.77%;
+    float: left;
+}
+
+#small-content .small-entry h3.small-entry-title {
+    width: 100%;
+    font-weight: 600;
+    font-size: 30px;
+    color: red;
+}
+
+#small-content .small-entry p.small-entry-content {
+    width: 100%;
+    margin-top: 32px;
+    line-height: 24px;
+    color: #7b7e80;
+}
+
+.small-buttons {
+    width: 96.6%;
+    margin-top: 40px;
+    float: right;
+}
+
+.small-buttons a.small-buy-now {
+    width: 31.40%;
+    min-height: 63px;
+    line-height: 22px;
+    background: #ff7f66;
+    margin: 0px auto;
+    padding-top: 18px;
+    font-weight: 300;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.small-buttons a.small-buy-now:hover {
+    opacity: 0.9;
+}
+
+.small-buttons a.small-buy-now span {
+    font-weight: 700;
+}
+
+.small-buttons a.small-buy-now p {
+    margin-top: 6px;
+    line-height: 13px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #fff;
+}
+
+/* Full Header */
+#full-header {
+    width: 100%;
+    height: 80px;
+    background: #34a7d6;
+}
+
+#full-content {
+    width: 100%;
+    background: #ffffff;
+    margin-top: 40px;
+    padding: 40px 0px;
+}
+
+#full-content h3.full-content-title {
+    width: 100%;
+    padding-bottom: 40px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #292e32;
+    text-align: center;
+}
+
+#full-content .form {
+    width: 41.05%;
+    margin: 0px auto;
+}
+
+#full-content .form .input-email {
+    width: 63.06%;
+    height: 38px;
+    padding-left: 20px;
+    color: #000;
+    border: 1px solid #dcdcdc;
+    border-right: none;
+    display: block;
+    float: left;
+}
+
+#full-content .form .input-email::-moz-placeholder {
+    color: #c3c3c3;
+}
+
+#full-content .form .input-submit {
+    width: 30.2%;
+    height: 42px;
+    background: #ff7f66;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    border: none;
+    cursor: pointer;
+    float: left;
+
+    line-height: 37px;
+    text-align: center;
+    font-size: 21px;
+}
+
+#full-content .form .input-submit:hover {
+    opacity: 0.9;
+}
+
+#full-content .login-details {
+    width: 52.54%;
+    margin: 0px auto;
+}
+
+#full-content .login-details .details {
+    float: left;
+}
+
+#full-content .login-details .details p {
+    line-height: 24px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #7c7e80;
+}
+
+#full-content .login-details .details p span {
+    font-weight: 600;
+}
+
+#full-content .login-details a.log-in-now {
+    width: 24.04%;
+    height: 40px;
+    line-height: 40px;
+    background: #aad8e8;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
+#full-content .login-details a.log-in-now:hover {
+    opacity: 0.9;
+}
