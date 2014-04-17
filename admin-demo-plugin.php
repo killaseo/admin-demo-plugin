@@ -176,7 +176,7 @@ function ti_render_custom_dashboard(){
 							<span>Download Now</span>  <?php echo $theme->get("Name"); ?>!
 						</a><!--/a .buy-now-->
 						<a href="http://themeisle.com/contact/" title="Support" class="support">
-							Support
+							Contact Support
 						</a>
 
 
@@ -235,11 +235,17 @@ function ti_custom_register_page(){
 			</script>
 			<script type="text/javascript">
 				$(document).ready(function(){
-					$("#ask").click(function(){
+
+					$("#register_form").submit(function(){
+
 						$.ajax({
 							url:"<?php echo admin_url( 'admin-ajax.php' ) ; ?>",
 							type:"POST",
 							data:{action:"ti_register_demo_user",email:$("#email").val()},
+							beforeSend:function(){
+								$("#full-content").html("<div id='loader'></div>");
+
+							},
 							success:function(r){
 								   $("#full-content").html(r);
 							}
@@ -277,9 +283,9 @@ function ti_custom_register_page(){
 				<h3 class="full-content-title">
 					We need your email adress to send you the login details !
 				</h3><!--/h3 .full-content-title-->
-				<form action="#" class="form cf">
+				<form action="#" id="register_form" class="form cf">
 					<input type="email" id="email" placeholder="Your e-mail address" class="input-email" required>
-					<a id="ask" class="input-submit"  >View Demo !</a>
+					<input type="submit"  id="ask" class="input-submit"  value="View Demo !"/>
 				</form><!--/form .form .cf-->
 			</section><!--/section #full-content-->
 		</div><!--/div .full-wrap-->
@@ -338,3 +344,16 @@ function ti_plugin_activate() {
     update_option("users_can_register",1);
 }
 register_activation_hook( __FILE__, 'ti_plugin_activate' );
+
+function ti_button_theme($wp_admin_bar){
+
+	$theme = wp_get_theme(  );
+	$args = array(
+		'id' => 'ti-theme-button',
+		'title' => 'View theme page',
+		'href' => $theme->get("ThemeURI")
+	);
+	$wp_admin_bar->add_node($args);
+}
+
+add_action('admin_bar_menu', 'ti_button_theme', 100);
