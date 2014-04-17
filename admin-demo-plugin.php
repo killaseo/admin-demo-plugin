@@ -10,7 +10,7 @@ Author URI: https://github.com/mariusalex20/
 License: A "Slug" license name e.g. GPLv3
 */
 
-define("ROLE_NAME","demo_user3");
+define("ROLE_NAME","ti_demo_user");
 
 //creating the new role for the demo user
 
