@@ -4,7 +4,7 @@
 Plugin Name: Admin Demo Plugin
 Plugin URI: http://themeisle.com
 Description: Wordpress plugin for creating demo accounts for admin dashboard
-Version: 1.0
+Version: 1.1
 Author: Marius Cristea
 Author URI: https://github.com/mariusalex20/
 License: A "Slug" license name e.g. GPLv3
@@ -127,7 +127,7 @@ function ti_render_restricted_area(){
 			</section><!--/section #small-content-->
 			<div class="small-buttons">
 				<a href="<?php echo $theme->get("ThemeURI"); ?>" title="Buy Now MusicBand Theme" class="small-buy-now">
-					<span>Buy Now</span> 	<?php echo $theme->get("Name"); ?>
+					<span>Download Now</span> 	<?php echo $theme->get("Name"); ?>
 					<p>And see all the features live on your live.</p>
 				</a><!--/a .small-buy-now-->
 			</div><!--/div .small-center-->
@@ -173,9 +173,9 @@ function ti_render_custom_dashboard(){
 
 						?>
 						<a href="<?php echo  $theme->get("ThemeURI"); ?>" title="Buy Now  <?php echo $theme->get("Name"); ?>!" class="buy-now">
-							<span>Buy Now</span>  <?php echo $theme->get("Name"); ?>!
+							<span>Download Now</span>  <?php echo $theme->get("Name"); ?>!
 						</a><!--/a .buy-now-->
-						<a href="<?php echo  $theme->get("AuthorURI"); ?>" title="Support" class="support">
+						<a href="http://themeisle.com/contact/" title="Support" class="support">
 							Support
 						</a>
 
@@ -275,11 +275,11 @@ function ti_custom_register_page(){
 		<div class="full-wrap">
 			<section id="full-content">
 				<h3 class="full-content-title">
-					Ask for WordPress Admin Dashboard login details !
+					We need your email adress to send you the login details !
 				</h3><!--/h3 .full-content-title-->
 				<form action="#" class="form cf">
 					<input type="email" id="email" placeholder="Your e-mail address" class="input-email" required>
-					<a id="ask" class="input-submit"  >Ask</a>
+					<a id="ask" class="input-submit"  >View Demo !</a>
 				</form><!--/form .form .cf-->
 			</section><!--/section #full-content-->
 		</div><!--/div .full-wrap-->
