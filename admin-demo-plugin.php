@@ -4,9 +4,9 @@
 Plugin Name: Admin Demo Plugin
 Plugin URI: http://themeisle.com
 Description: Wordpress plugin for creating demo accounts for admin dashboard
-Version: 1.1
+Version: 1.2
 Author: Marius Cristea
-Author URI: https://github.com/mariusalex20/
+Author URI: https://github.com/selu91/
 License: A "Slug" license name e.g. GPLv3
 */
 
@@ -126,9 +126,13 @@ function ti_render_restricted_area(){
 				</div><!--/div .small-entry-->
 			</section><!--/section #small-content-->
 			<div class="small-buttons">
-				<a href="<?php echo $theme->get("ThemeURI"); ?>" title="Buy Now MusicBand Theme" class="small-buy-now">
+				<a href="<?php echo $theme->get("ThemeURI"); ?>" title="Buy Now <?php echo $theme->get("Name"); ?> Theme" class="small-buy-now">
 					<span>Download Now</span> 	<?php echo $theme->get("Name"); ?>
 					<p>And see all the features live on your live.</p>
+				</a>
+				<a href="<?php echo admin_url("customize.php"); ?>" title="Buy Now <?php echo $theme->get("Name"); ?> Theme" class="small-customizer-now">
+					<span>Theme options</span> 	<?php echo $theme->get("Name"); ?>
+					<p>See all theme options.</p>
 				</a><!--/a .small-buy-now-->
 			</div><!--/div .small-center-->
 		</div><!--/div .wrapper-->
@@ -174,6 +178,9 @@ function ti_render_custom_dashboard(){
 						?>
 						<a href="<?php echo  $theme->get("ThemeURI"); ?>" title="Buy Now  <?php echo $theme->get("Name"); ?>!" class="buy-now">
 							<span>Download Now</span>  <?php echo $theme->get("Name"); ?>!
+						</a>
+						<a   href="<?php echo admin_url("customize.php"); ?>" title="Theme options  <?php echo $theme->get("Name"); ?>!" class="tiad-themeoptions buy-now">
+							<span>Theme Options for </span>  <?php echo $theme->get("Name"); ?>!
 						</a><!--/a .buy-now-->
 						<a href="http://themeisle.com/contact/" title="Support" class="support">
 							Contact Support

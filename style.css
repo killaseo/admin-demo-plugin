@@ -155,7 +155,6 @@
     margin-top: 40px;
     float: left;
 }
-
 #content .buttons a.buy-now {
     padding:10px;
     height: 40px;
@@ -166,7 +165,15 @@
     text-decoration: none;
     float: left;
 }
+.update-nag,.updated {
+    display:none;
 
+}
+#content .buttons a.buy-now.tiad-themeoptions{
+
+    background: #A0D468;
+    margin-left:20px;
+}
 #content .buttons a.buy-now span {
     font-weight: 700;
 }
@@ -248,12 +255,26 @@
     display: block;
     text-decoration: none;
 }
+.small-buttons a.small-customizer-now {
+    width: 50.40%;
+    min-height: 63px;
+    line-height: 22px;
+    background: #A0D468 ;
+    margin: 0px auto;
+    padding-top: 18px;
+    font-weight: 300;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
 
-.small-buttons a.small-buy-now:hover {
+.small-buttons a.small-buy-now:hover,.small-buttons a.small-customizer-now:hover {
     opacity: 0.9;
 }
 
-.small-buttons a.small-buy-now span {
+.small-buttons a.small-buy-now span,.small-buttons a.small-customizer-now span {
     font-weight: 700;
 }
 
