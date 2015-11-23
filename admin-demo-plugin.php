@@ -327,6 +327,17 @@ function ti_register_demo_user_callback() {
 			"user_pass"=>$password
 
 		) );
+		if(is_multisite()){ 
+			$cblog = get_user_meta($user->ID,"primary_blog",true);
+			$cpblog =  get_user_meta($user->ID,"wp_{$cblog}_capabilities",true);
+			$ulblog =  get_user_meta($user->ID,"wp_{$cblog}_user_level",true);
+			delete_user_meta($user->ID,"wp_{$cblog}_capabilities");
+			delete_user_meta($user->ID,"wp_{$cblog}_user_level");
+			$cblog = get_current_blog_id();
+			add_user_meta($user->ID,"wp_{$cblog}_capabilities",$cpblog);
+			add_user_meta($user->ID,"wp_{$cblog}_user_level",$ulblog);
+			update_user_meta($user->ID,"primary_blog", get_current_blog_id());
+		}
 	}
 
 	?>
